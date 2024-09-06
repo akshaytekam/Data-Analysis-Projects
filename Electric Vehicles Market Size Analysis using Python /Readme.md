@@ -3,6 +3,8 @@
 **Market size analysis is a crucial aspect of market research that determines the potential sales volume within a given market. 
 It helps businesses understand the magnitude of demand, assess market saturation levels, and identify growth opportunities.**
 
+**Dataset Link:  https://statso.io/market-size-of-evs-case-study/**
+
 **The provided dataset contains the following columns, each representing different aspects of the electric vehicle (EV) population in the United States:**
 
 - VIN (1-10): Partial Vehicle Identification Number.
