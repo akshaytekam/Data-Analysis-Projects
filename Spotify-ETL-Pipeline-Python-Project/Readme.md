@@ -59,3 +59,12 @@ Enable stakeholders to generate insights or create dashboards using tools like T
 - Gain insights into Spotify trends and music patterns.
 - Build recommendations or visualizations based on the data.
 - Demonstrate expertise in ETL pipelines, cloud computing, and data analysis.
+
+## Important Libraries:
+- pip install spotipy
+
+## Important Links:
+- Spotify Docs:-  https://developer.spotify.com/documentation/web-api/tutorials/getting-started
+
+
+
