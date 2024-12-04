@@ -65,6 +65,36 @@ Enable stakeholders to generate insights or create dashboards using tools like T
 
 ## Important Links:
 - Spotify Docs:-  https://developer.spotify.com/documentation/web-api/tutorials/getting-started
+- Get Token:- https://developer.spotify.com/dashboard/71a5129d70d142279bf08eac17a8ed77/settings
+
+## AWS Services Flow And Architechture
+- First created the AWS S3 bucket with name (spotify-etl-project-akki)
+- Create below folder architechture:
+    - raw_data
+        - processed (already processed)
+        - to_processed (yet to process)
+    - transformed_data
+        - album_data
+        - songs_data
+        - artist_data
+- Open Lambda service and create a function name (spotify_api_data_extract)
+- Next add environment variable for our client_id and client_secret
+- Inside Lambda service create a new layer as well for importing spotify packages and use it in AWS environment. Upload the given (spotipy_layer.zip) file.
+- In this function implement boto3 library to interact with AWS services. So using this we dump our entire json data into S3.
+- Next create a IAM role here so that any two servicess in AWS can talk to each other by providing them full S3 permissions.
+- After deploying and running this function, we'll get a json file extracted like below:
+![s1](https://github.com/user-attachments/assets/6a71fc61-05d1-4d66-a071-f11d9c15d064)
+
+- Now create another function for transformation of raw data with name (spotify_transformation_load_function)
+- WE can use the same IAM role for this function as well.
+- Here we have to do two things now:
+    - take the data from folder to_processed and transform it completly and put it into transformed_data folder respectively.
+    - Once the data is processed we need to move that data from to_processed folder into processed folder. So that we don't process the same data again.
+- Once everything done, add the triggers from AWS CloudWatch to automate the process.
+- Now use the AWS Glue Crawler to get the schema information and put it in a table format.
+- And at last use Athena to run the SQL queries to view the data and do analysis with this entire pipeline.
+
+![athena](https://github.com/user-attachments/assets/0def5a73-a833-4e90-a842-9ffdc1d13853)
 
 
 
