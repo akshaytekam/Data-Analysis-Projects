@@ -11,3 +11,6 @@
 
 ### Environment Variables:
 - It keeps our client id and secreate key secure and stored.
+
+### Lambda Layer:
+- If we want to install some external packages or library into our code, we need lambda layers to do this.
