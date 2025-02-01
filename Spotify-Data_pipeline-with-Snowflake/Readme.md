@@ -10,7 +10,7 @@
 
 The solution uses a serverless architecture pattern with the following components:
 
-- **Data Source:** Spotify API (Top 50 Playlist)
+- **Data Source:** Spotify API (Top 50 Playlist) (https://open.spotify.com/playlist/6SAUxRqgv0EdwHHnjBRmoE)
 - **Extraction:** AWS Lambda + CloudWatch trigger (weekly)
 - **Storage:** AWS S3 (Raw JSON & Transformed CSV)
 - **Transformation:** AWS Lambda
