@@ -1,7 +1,7 @@
 # Spotify Data pipeline with Python, ASW, Snowflake, and Power BI
 
 ## OVERVIEW:
-**The goal of this project is to build an ETL (Extract, Transform, Load) pipeline that processes and analyzes Spotify data to extract meaningful insights. The pipeline integrates Python with AWS services such as S3, Lambda, and CloudWatch, and uses SQL for data querying and analysis. The project demonstrates how to automate data workflows in a cloud-based environment.**
+**The goal of this project is to build an serverless ETL (Extract, Transform, Load) pipeline that processes and analyzes Spotify data to extract meaningful insights. The pipeline integrates Python with AWS services such as S3, Lambda, and CloudWatch, and uses SQL for data querying and analysis. The project demonstrates how to automate data workflows in a cloud-based environment.**
 
 ![solution_flow](https://github.com/user-attachments/assets/a7e173cf-d497-42ab-b4ad-f149d1795906)
 
